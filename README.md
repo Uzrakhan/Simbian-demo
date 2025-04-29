@@ -3,7 +3,7 @@
 ## Overview
 This interactive comparison demonstrates security operations efficiency **without** vs **with** Simbian's AI-powered platform. Built with Next.js 14, Tailwind CSS, and Framer Motion, it showcases dramatic differences in alert handling through dynamic animations and real-time simulations.
 
-[Live Demo](https://simbian-demo.vercel.app) • [Video Reference](https://drive.google.com/drive/folders/1yeklCMBqYDDoCgnyqcqqwQhpyV5uBi3L)
+Live Demo(https://simbian-demo-zwed.vercel.app/) • [Video Reference](https://drive.google.com/drive/folders/1yeklCMBqYDDoCgnyqcqqwQhpyV5uBi3L)
 
 ## Key Features
 - 🚨 **Real-time Alert Simulation**: Animated counters & alert streams
@@ -34,4 +34,12 @@ components/
 ├─ AnimatedCard.tsx  # Reusable animation wrapper
 ├─ WithoutSimbian.tsx  # Stress state visualization
 ├─ WithSimbian.tsx    # Resolution flow
-└─ HydrationFix.tsx   # SSR compatibility
+└─ NoSSR.tsx   # SSR compatibility
+
+
+Future Improvements =>
+Add audio/visual feedback for alert thresholds
+Implement touch gesture controls
+Create loading skeleton states
+Add dark mode support
+
