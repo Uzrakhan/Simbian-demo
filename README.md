@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simbian Demo
 
-## Getting Started
+## Overview
+This interactive comparison demonstrates security operations efficiency **without** vs **with** Simbian's AI-powered platform. Built with Next.js 14, Tailwind CSS, and Framer Motion, it showcases dramatic differences in alert handling through dynamic animations and real-time simulations.
 
-First, run the development server:
+[Live Demo](https://simbian-demo.vercel.app) • [Video Reference](https://drive.google.com/drive/folders/1yeklCMBqYDDoCgnyqcqqwQhpyV5uBi3L)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
+- 🚨 **Real-time Alert Simulation**: Animated counters & alert streams
+- 📱 **Responsive Design**: Optimized for mobile/tablet/desktop
+- 🎬 **Framer Motion Animations**: Spring physics, layout transitions
+- ⚡ **Performance**: 90+ Lighthouse score, optimized re-renders
+- 🛡 **Type Safety**: Full TypeScript implementation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS + CSS Modules
+- **Animations**: Framer Motion 10
+- **Icons**: Heroicons
+- **Deployment**: Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Implementation Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Animation Strategy
+Used Framer Motion's spring animations for natural movement:
+- `useAnimate` for complex sequences
+- `AnimatePresence` for alert transitions
+- Layout animations for responsive shifts
+- Custom cubic bezier curves for brand-aligned timing
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Component Architecture
+```plaintext
+components/
+├─ AnimatedCard.tsx  # Reusable animation wrapper
+├─ WithoutSimbian.tsx  # Stress state visualization
+├─ WithSimbian.tsx    # Resolution flow
+└─ HydrationFix.tsx   # SSR compatibility
