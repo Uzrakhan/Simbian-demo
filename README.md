@@ -21,7 +21,7 @@ This interactive comparison demonstrates security operations efficiency **withou
 
 ## Implementation Details
 
-### Animation Strategy
+### Animation Strategy  
 Used Framer Motion's spring animations for natural movement:
 - `useAnimate` for complex sequences
 - `AnimatePresence` for alert transitions
