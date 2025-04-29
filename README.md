@@ -3,7 +3,7 @@
 ## Overview
 This interactive comparison demonstrates security operations efficiency **without** vs **with** Simbian's AI-powered platform. Built with Next.js 14, Tailwind CSS, and Framer Motion, it showcases dramatic differences in alert handling through dynamic animations and real-time simulations.
 
-Live Demo(https://simbian-demo-zwed.vercel.app/) • [Video Reference](https://drive.google.com/drive/folders/1yeklCMBqYDDoCgnyqcqqwQhpyV5uBi3L)
+Live Demo(https://simbian-demo-zwed.vercel.app/) 
 
 ## Key Features
 - 🚨 **Real-time Alert Simulation**: Animated counters & alert streams
