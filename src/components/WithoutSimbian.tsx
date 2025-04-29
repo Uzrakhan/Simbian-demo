@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BellAlertIcon } from '@heroicons/react/24/outline'
 import AnimatedCard from './AnimatedCard'
-import HydrationFix from './HydrationFix'
+import NoSSR from './NoSSR'
 import { JSX } from 'react/jsx-runtime'
 export const dynamic = 'force-dynamic'
 
@@ -90,9 +90,9 @@ const HydrationProtectedComponent = () => {
 
 export default function WithoutSimbian() {
   return (
-    <HydrationFix>
+    <NoSSR>
       <HydrationProtectedComponent />
-    </HydrationFix>
+    </NoSSR>
   )
 }
 
